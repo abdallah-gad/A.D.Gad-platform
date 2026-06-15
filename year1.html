@@ -28,22 +28,73 @@
             overflow: hidden;
         }
 
-        /* رأس الصفحة */
+        /* رأس الصفحة باللوجوهات */
         .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: white;
+            border-bottom: 3px solid #2c7da0;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .institute-info h2 {
+            font-size: 1rem;
+            color: #0b3b4f;
+            margin: 0;
+        }
+        .institute-info h3 {
+            font-size: 1.3rem;
+            color: #1f5068;
+            margin: 0;
+        }
+
+        .platform-logo {
+            text-align: left;
+        }
+        .platform-logo .platform-name {
+            font-size: 1.7rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #1f7a8c, #023047);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .platform-logo small {
+            color: #2c7da0;
+            font-weight: bold;
+        }
+
+        /* قسم الترحيب بالفرقة */
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
             background: linear-gradient(135deg, #023047, #0f4c5f);
             color: white;
-            padding: 2rem;
-            text-align: center;
         }
-        .header h1 {
-            font-size: 2.5rem;
+        .hero h1 {
+            font-size: 2rem;
         }
-        .header h1 i {
+        .hero h1 i {
             color: #ffb703;
             margin-left: 0.5rem;
         }
-        .header p {
-            font-size: 1.1rem;
+        .hero p {
+            font-size: 1rem;
             margin-top: 0.5rem;
             opacity: 0.9;
         }
@@ -128,7 +179,14 @@
 
         @media (max-width: 700px) {
             body { padding: 1rem; }
-            .header h1 { font-size: 1.8rem; }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .platform-logo {
+                text-align: center;
+            }
+            .hero h1 { font-size: 1.5rem; }
             .year-card { width: 170px; padding: 1.2rem 0.5rem; }
             .year-card h3 { font-size: 1.2rem; }
         }
@@ -136,10 +194,27 @@
 </head>
 <body>
 <div class="container">
+    <!-- رأس الصفحة باللوجوهات -->
     <div class="header">
-        <h1><i class="fas fa-seedling"></i> سنة أولى</h1>
-        <p>الفرقة الأولى – المعهد التكنولوجي العالي للعلوم الصحية التطبيقية – بشربين</p>
-        <a href="index.html" class="back-home">🏠 العودة لاختيار السنوات الدراسية</a>
+        <div class="logo-area">
+            <img src="images/institute-logo.png" alt="لوجو المعهد" class="logo-img">
+            <div class="institute-info">
+                <h2>🏥 المعهد التكنولوجي العالي</h2>
+                <h3>للعلوم الصحية التطبيقية - بشربين</h3>
+            </div>
+        </div>
+        <div class="platform-logo">
+            <img src="images/platform-logo.png" alt="لوجو المنصة" class="logo-img" style="border-radius: 15px;">
+            <div class="platform-name">A.D.Gad-platform</div>
+            <small>منصتك التعليمية الذكية</small>
+        </div>
+    </div>
+
+    <!-- قسم الترحيب بالفرقة الأولى -->
+    <div class="hero">
+        <h1><i class="fas fa-seedling"></i> الفرقة الأولى</h1>
+        <p>أساسيات العلوم الصحية – المعهد التكنولوجي العالي للعلوم الصحية التطبيقية – بشربين</p>
+        <a href="index.html" class="back-home">🏠 العودة للصفحة الرئيسية</a>
     </div>
 
     <div class="selection-section">
