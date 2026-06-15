@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفرقة الأولى 2025-2026 | A.D.Gad-platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', 'Segoe UI', sans-serif;
+            background: #eef2f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #023047, #0f4c5f);
+            color: white;
+            padding: 1.8rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2rem;
+        }
+        .year-badge {
+            background: #ffb703;
+            color: #023047;
+            display: inline-block;
+            padding: 0.3rem 1.2rem;
+            border-radius: 2rem;
+            font-weight: bold;
+            margin: 0.8rem 0;
+            font-size: 1.1rem;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 1rem;
+            background: #ffb703;
+            color: #023047;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 3px solid #ddd;
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: #f4f6f8;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: inherit;
+        }
+        .tab-btn.active {
+            background: #2c7da0;
+            color: white;
+            border-bottom: 3px solid #ffb703;
+        }
+        .tab-content {
+            display: none;
+            padding: 2rem;
+            animation: fadeIn 0.3s ease;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .material-card {
+            background: #f9fbfd;
+            border-radius: 1.2rem;
+            margin-bottom: 1.8rem;
+            padding: 1.2rem 1.5rem;
+            border-right: 6px solid #2c7da0;
+            border-left: 1px solid #e2e8f0;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            transition: 0.2s;
+        }
+        .material-card:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            background: white;
+        }
+        .material-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #023047;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .material-title i {
+            color: #ffb703;
+            font-size: 1.6rem;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            align-items: center;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: 0.2s;
+        }
+        .btn-pdf-book { background: #dc2626; color: white; }
+        .btn-pdf-mid { background: #ea580c; color: white; }
+        .btn-form-mid { background: #059669; color: white; }
+        .btn-pdf-final { background: #7c3aed; color: white; }
+        .btn-form-final { background: #2563eb; color: white; }
+        .btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+        }
+
+        .footer {
+            background: #023047;
+            color: #ccc;
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 800px) {
+            body { padding: 0.5rem; }
+            .material-title { font-size: 1.1rem; }
+            .btn { padding: 0.4rem 0.7rem; font-size: 0.7rem; }
+            .buttons-container { gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🎓 الفرقة الأولى – العلوم الصحية التطبيقية</h1>
+        <div class="year-badge">📅 العام الدراسي 2025 / 2026</div>
+        <div class="institute-name">🏥 المعهد التكنولوجي العالي للعلوم الصحية التطبيقية – بشربين</div>
+        <a href="index.html" class="back-home">🏠 العودة للصفحة الرئيسية</a>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('sem1')">📖 الترم الأول (7 مواد)</button>
+        <button class="tab-btn" onclick="showTab('sem2')">📚 الترم الثاني (7 مواد)</button>
+    </div>
+
+    <!-- ================= الترم الأول ================= -->
+    <div id="sem1" class="tab-content active">
+        <!-- مادة 1 -->
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-book-medical"></i> 1. تشريح الإنسان</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <!-- مادة 2 -->
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-heartbeat"></i> 2. فسيولوجيا الإنسان</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <!-- مادة 3 -->
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-hand-holding-heart"></i> 3. مبادئ التمريض</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <!-- مادة 4 -->
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-microscope"></i> 4. علم الأحياء الدقيقة</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <!-- مادة 5 -->
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-flask"></i> 5. كيمياء حيوية</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <!-- مادة 6 -->
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-capsules"></i> 6. أدوية أساسية</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <!-- مادة 7 -->
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-brain"></i> 7. سلوكيات صحية ونفسية</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= الترم الثاني ================= -->
+    <div id="sem2" class="tab-content">
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-bone"></i> 1. أمراض العظام والمفاصل</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-heart"></i> 2. أمراض القلب والجهاز الدوري</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-lungs"></i> 3. أمراض الجهاز التنفسي</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-vial"></i> 4. تحاليل طبية</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-chart-line"></i> 5. إحصاء طبي</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-stethoscope"></i> 6. مهارات إكلينيكية</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+        <div class="material-card">
+            <div class="material-title"><i class="fas fa-globe-africa"></i> 7. صحة عامة ووبائيات</div>
+            <div class="buttons-container">
+                <a href="#" class="btn btn-pdf-book" target="_blank"><i class="fas fa-file-pdf"></i> كتاب المادة</a>
+                <a href="#" class="btn btn-pdf-mid" target="_blank"><i class="fas fa-file-pdf"></i> بنك الميد</a>
+                <a href="#" class="btn btn-form-mid" target="_blank"><i class="fas fa-edit"></i> فورم الميد</a>
+                <a href="#" class="btn btn-pdf-final" target="_blank"><i class="fas fa-file-pdf"></i> بنك الفاينال</a>
+                <a href="#" class="btn btn-form-final" target="_blank"><i class="fas fa-clipboard-list"></i> فورم الفاينال</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <i class="fas fa-graduation-cap"></i> A.D.Gad-platform | العام الدراسي 2025-2026 – معهد بشربين للعلوم الصحية التطبيقية
+    </div>
+</div>
+
+<script>
+    function showTab(tabId) {
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
+
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        event.target.classList.add('active');
+    }
+</script>
+</body>
+</html>
