@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.D.Gad-platform | المعهد التكنولوجي العالي للعلوم الصحية التطبيقية - بشربين</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(120deg, #e0f2fe, #f0f9ff);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            background: rgba(255,255,255,0.92);
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+            overflow: hidden;
+            backdrop-filter: blur(2px);
+        }
+
+        /* رأس الصفحة باللوجوهات */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: white;
+            border-bottom: 3px solid #2c7da0;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .institute-info h2 {
+            font-size: 1rem;
+            color: #0b3b4f;
+            margin: 0;
+        }
+        .institute-info h3 {
+            font-size: 1.3rem;
+            color: #1f5068;
+            margin: 0;
+        }
+
+        .platform-logo {
+            text-align: left;
+        }
+        .platform-logo .platform-name {
+            font-size: 1.7rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #1f7a8c, #023047);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .platform-logo small {
+            color: #2c7da0;
+            font-weight: bold;
+        }
+
+        /* قسم الترحيب */
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem 1rem;
+            background: linear-gradient(to bottom, #ffffff, #f8fafc);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #023047;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-top: 0.5rem;
+        }
+
+        /* اختيار الفرقة */
+        .years-section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .years-section h2 {
+            font-size: 2rem;
+            color: #0f4c5f;
+            margin-bottom: 2rem;
+            border-right: 6px solid #ffb703;
+            display: inline-block;
+            padding-right: 1rem;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            width: 230px;
+            padding: 2rem 1rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 1px solid #cbd5e1;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+            border-color: #2c7da0;
+        }
+        .card i {
+            font-size: 3rem;
+            color: #2c7da0;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            font-size: 1.6rem;
+            color: #0b3b4f;
+        }
+
+        .footer {
+            background: #023047;
+            color: #ccc;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .platform-logo {
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- رأس الصفحة باللوجوهات -->
+    <div class="header">
+        <div class="logo-area">
+            <!-- لوجو المعهد – ضع هنا رابط الصورة الحقيقية -->
+            <img src="images/institute-logo.png" alt="لوجو المعهد" class="logo-img" id="instituteLogo">
+            <div class="institute-info">
+                <h2>🏥 المعهد التكنولوجي العالي</h2>
+                <h3>للعلوم الصحية التطبيقية - بشربين</h3>
+            </div>
+        </div>
+        <div class="platform-logo">
+            <!-- لوجو المنصة – ضع هنا صورتك الحقيقية -->
+            <img src="images/platform-logo.png" alt="لوجو المنصة" class="logo-img" style="border-radius: 15px;">
+            <div class="platform-name">A.D.Gad-platform</div>
+            <small>منصتك التعليمية الذكية</small>
+        </div>
+    </div>
+
+    <!-- ترحيب -->
+    <div class="hero">
+        <h1>🎓 مرحباً بك في منصة A.D.Gad</h1>
+        <p>نحو تعليم صحي متطور بأساليب رقمية إبداعية - كل ما تحتاجه في مكان واحد</p>
+    </div>
+
+    <!-- اختيار الفرقة -->
+    <div class="years-section">
+        <h2>📚 اختر الفرقة الدراسية</h2>
+        <div class="cards">
+            <div class="card" onclick="goToYear(1)"><i class="fas fa-seedling"></i><h3>الفرقة الأولى</h3><p>أساسيات العلوم الصحية</p></div>
+            <div class="card" onclick="goToYear(2)"><i class="fas fa-microscope"></i><h3>الفرقة الثانية</h3><p>علوم سريرية</p></div>
+            <div class="card" onclick="goToYear(3)"><i class="fas fa-heartbeat"></i><h3>الفرقة الثالثة</h3><p>تخصصات صحية</p></div>
+            <div class="card" onclick="goToYear(4)"><i class="fas fa-user-md"></i><h3>الفرقة الرابعة</h3><p>تدريب ميداني وتخرج</p></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 A.D.Gad-platform - بالشراكة مع المعهد التكنولوجي العالي للعلوم الصحية التطبيقية بشربين | جميع الحقوق محفوظة
+    </div>
+</div>
+
+<script>
+    function goToYear(year) {
+        const links = {
+            1: "year1.html",
+            2: "year2.html",
+            3: "year3.html",
+            4: "year4.html"
+        };
+        if(links[year]) window.location.href = links[year];
+        else alert("سيتم إضافة محتوى الفرقة " + year + " قريباً!");
+    }
+
+    // هنضيف كود تجريبي لتغيير اللوجو من مكانه (بعدين هتضيف صورك بدل placeholder)
+    // عشان تظهر صورك الحقيقية: غيّر src في وسم <img>
+</script>
+</body>
+</html>
