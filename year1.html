@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سنة أولى | A.D.Gad-platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        /* رأس الصفحة */
+        .header {
+            background: linear-gradient(135deg, #023047, #0f4c5f);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+        }
+        .header h1 i {
+            color: #ffb703;
+            margin-left: 0.5rem;
+        }
+        .header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 1rem;
+            background: #ffb703;
+            color: #023047;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .back-home:hover {
+            background: #ffc107;
+            transform: scale(1.02);
+        }
+
+        /* قسم الاختيار */
+        .selection-section {
+            padding: 2.5rem;
+            text-align: center;
+        }
+        .selection-section h2 {
+            font-size: 1.8rem;
+            color: #023047;
+            margin-bottom: 2rem;
+            border-right: 6px solid #ffb703;
+            display: inline-block;
+            padding-right: 1rem;
+        }
+
+        .years-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .year-card {
+            background: white;
+            width: 220px;
+            padding: 1.8rem 1rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 2px solid #e2e8f0;
+            text-align: center;
+        }
+        .year-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+            border-color: #2c7da0;
+            background: #f8fafc;
+        }
+        .year-card i {
+            font-size: 2.5rem;
+            color: #2c7da0;
+            margin-bottom: 1rem;
+        }
+        .year-card h3 {
+            font-size: 1.6rem;
+            color: #0b3b4f;
+            font-weight: bold;
+        }
+        .year-card p {
+            color: #2c7da0;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+
+        .footer {
+            background: #023047;
+            color: #ccc;
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 700px) {
+            body { padding: 1rem; }
+            .header h1 { font-size: 1.8rem; }
+            .year-card { width: 170px; padding: 1.2rem 0.5rem; }
+            .year-card h3 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1><i class="fas fa-seedling"></i> سنة أولى</h1>
+        <p>الفرقة الأولى – المعهد التكنولوجي العالي للعلوم الصحية التطبيقية – بشربين</p>
+        <a href="index.html" class="back-home">🏠 العودة لاختيار السنوات الدراسية</a>
+    </div>
+
+    <div class="selection-section">
+        <h2>📅 اختر السنة الدراسية</h2>
+        <div class="years-container">
+            <div class="year-card" onclick="selectAcademicYear('2025-2026')">
+                <i class="fas fa-calendar-check"></i>
+                <h3>2025 / 2026</h3>
+                <p>المحتوى متاح</p>
+            </div>
+            <div class="year-card" onclick="selectAcademicYear('2026-2027')">
+                <i class="fas fa-calendar"></i>
+                <h3>2026 / 2027</h3>
+                <p>قريباً</p>
+            </div>
+            <div class="year-card" onclick="selectAcademicYear('2027-2028')">
+                <i class="fas fa-calendar"></i>
+                <h3>2027 / 2028</h3>
+                <p>قريباً</p>
+            </div>
+            <div class="year-card" onclick="selectAcademicYear('2028-2029')">
+                <i class="fas fa-calendar"></i>
+                <h3>2028 / 2029</h3>
+                <p>قريباً</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <i class="fas fa-graduation-cap"></i> A.D.Gad-platform – تعليم صحي متطور
+    </div>
+</div>
+
+<script>
+    function selectAcademicYear(year) {
+        if (year === '2025-2026') {
+            window.location.href = "year1_2025-2026.html";
+        } else if (year === '2026-2027') {
+            alert("سيتم إضافة محتوى سنة 2026-2027 قريباً!");
+            // window.location.href = "year1_2026-2027.html";
+        } else if (year === '2027-2028') {
+            alert("سيتم إضافة محتوى سنة 2027-2028 قريباً!");
+            // window.location.href = "year1_2027-2028.html";
+        } else if (year === '2028-2029') {
+            alert("سيتم إضافة محتوى سنة 2028-2029 قريباً!");
+            // window.location.href = "year1_2028-2029.html";
+        }
+    }
+</script>
+</body>
+</html>
