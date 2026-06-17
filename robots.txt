@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abdallah-gad.github.io/A.D.Gad-platform/sitemap.xml
