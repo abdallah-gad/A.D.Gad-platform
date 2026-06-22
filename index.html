@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قيد التطوير | A.D.Gad-platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            border-radius: 2rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+        }
+
+        .logo-area {
+            margin-bottom: 2rem;
+        }
+
+        .logo-img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .platform-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #1f7a8c, #023047);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .institute-name {
+            color: #0b3b4f;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .status-icon {
+            font-size: 4rem;
+            color: #ffb703;
+            margin: 2rem 0;
+        }
+
+        .status-title {
+            font-size: 2rem;
+            color: #023047;
+            font-weight: bold;
+        }
+
+        .status-message {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin: 1.5rem 0;
+            line-height: 1.8;
+        }
+
+        .status-message strong {
+            color: #023047;
+        }
+
+        .contact-info {
+            background: #f0f9ff;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-right: 4px solid #2c7da0;
+        }
+
+        .contact-info i {
+            color: #2c7da0;
+            margin-left: 0.5rem;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            color: #1e293b;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            color: #94a3b8;
+            font-size: 0.8rem;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #e2e8f0;
+            border-radius: 50%;
+            border-top-color: #2c7da0;
+            animation: spin 1s ease-in-out infinite;
+            margin: 1rem 0;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 2rem 1rem; }
+            .platform-name { font-size: 1.8rem; }
+            .status-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo-area">
+        <!-- لوجو المنصة -->
+        <img src="images/platform-logo.png" alt="A.D.Gad-platform" class="logo-img">
+        <div class="platform-name">A.D.Gad-platform</div>
+        <div class="institute-name">
+            🏥 المعهد التكنولوجي العالي للعلوم الصحية التطبيقية – بشربين
+        </div>
+    </div>
+
+    <div class="status-icon">
+        <i class="fas fa-clock"></i>
+    </div>
+
+    <h1 class="status-title">⏳ قيد التطوير</h1>
+
+    <div class="status-message">
+        <p>المنصة حالياً <strong>قيد التطوير</strong>،</p>
+        <p>ولن يتم فتحها للطلاب إلا بعد <strong>الحصول على الموافقة الرسمية</strong> من إدارة المعهد.</p>
+        <p style="margin-top: 1rem; color: #2c7da0;">
+            <i class="fas fa-check-circle"></i> سيتم الإعلان عن موعد الانطلاق قريباً
+        </p>
+    </div>
+
+    <div class="loader"></div>
+
+    <div class="contact-info">
+        <p><i class="fas fa-info-circle"></i> للتواصل مع إدارة المعهد:</p>
+        <p><i class="fas fa-phone"></i>  جاري توفير أرقام التواصل</p>
+        <p><i class="fas fa-envelope"></i> info@institute.edu.eg</p>
+    </div>
+
+    <div class="footer">
+        <i class="fas fa-graduation-cap"></i> A.D.Gad-platform | منتظرون موافقة المعهد
+    </div>
+</div>
+</body>
+</html>
